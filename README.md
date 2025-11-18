@@ -1,10 +1,4 @@
-
----
-
-## 📌 🧠 **Diagrama del proyecto (UML simple)**
-
-```text
-                    +----------------------+
+         +----------------------+
                     |     IObserver        |
                     |----------------------|
                     | + Actualizar()       |
