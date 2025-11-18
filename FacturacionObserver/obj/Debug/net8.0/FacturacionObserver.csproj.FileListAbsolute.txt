@@ -1,0 +1,14 @@
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\bin\Debug\net8.0\FacturacionObserver.exe
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\bin\Debug\net8.0\FacturacionObserver.deps.json
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\bin\Debug\net8.0\FacturacionObserver.runtimeconfig.json
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\bin\Debug\net8.0\FacturacionObserver.dll
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\bin\Debug\net8.0\FacturacionObserver.pdb
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.AssemblyInfoInputs.cache
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.AssemblyInfo.cs
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.csproj.CoreCompileInputs.cache
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.dll
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\refint\FacturacionObserver.dll
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.pdb
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\FacturacionObserver.genruntimeconfig.cache
+C:\Users\rober\Desktop\tarea 3\FacturacionObserverFull\FacturacionObserver\obj\Debug\net8.0\ref\FacturacionObserver.dll
