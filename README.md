@@ -1,45 +1,48 @@
-                    +----------------------+
-                    |     IObserver        |
-                    |----------------------|
-                    | + Actualizar()       |
-                    +----------+-----------+
-                               ^
-                               |
-     +-------------------------+------------------------------+
-     |                         |                              |
-+------------+        +----------------+           +------------------+
-| Cliente    |        | Inventario     |           | LogEventos       |
-| Observer   |        | Observer       |           | Observer         |
-+------------+        +----------------+           +------------------+
+```mermaid
+classDiagram
+    class IObserver {
+        <<interface>>
+        +Actualizar(evento : string)
+    }
 
-                        (observadores)
+    class ClienteObserver {
+        +Actualizar(evento : string)
+    }
+    class InventarioObserver {
+        +Actualizar(evento : string)
+    }
+    class LogObserver {
+        +Actualizar(evento : string)
+    }
 
-                                ▲
-                                |
-                     +--------------------+
-                     |    Notificador     |
-                     |--------------------|
-                     | + Registrar()      |
-                     | + Notificar()      |
-                     +---------+----------+
+    class Notificador {
+        -List~IObserver~ observadores
+        +Registrar(obs : IObserver)
+        +Notificar(evento : string)
+    }
 
-                   (subject que notifica)
+    class PedidoManager {
+        +ProcesarPedido()
+    }
 
-                                ▲
-                                |
-                 +------------------------------+
-                 |           Managers           |
-                 |------------------------------|
-                 | PedidoManager                |
-                 | FacturaManager               |
-                 +------------------------------+
+    class FacturaManager {
+        +GenerarFactura()
+    }
 
-                                ▲
-                                |
-                     +-------------------+
-                     |    Program.cs     |
-                     |-------------------|
-                     | Hilo 1: Pedidos   |
-                     | Hilo 2: Facturas  |
-                     | Hilo 3: Notifica  |
-                     +-------------------+
+    class Program {
+        +Main()
+        +ThreadPedidos()
+        +ThreadFacturas()
+        +ThreadNotificaciones()
+    }
+
+    IObserver <|.. ClienteObserver
+    IObserver <|.. InventarioObserver
+    IObserver <|.. LogObserver
+
+    Notificador --> IObserver : notifica
+    PedidoManager --> Notificador : usa
+    FacturaManager --> Notificador : usa
+
+    Program --> PedidoManager : ejecuta en hilo
+    Program --> FacturaManager : ejecuta en hilo
